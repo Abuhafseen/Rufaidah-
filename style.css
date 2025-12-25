@@ -1,0 +1,275 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #4a47f5;
+  color: #3a2e2a;;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #fff8f2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #c06a1b;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #3a2e2a;
+  font-weight: 500;
+  padding: 30px;
+}
+
+.nav-links a:hover {
+  color: #c96a1b;
+}
+
+/* HERO */
+.hero {
+  height: 85vh;
+  background: linear-gradient(
+    rgba(247, 217, 196, 0.95),
+    rgba(247, 217, 196, 0.95)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  color: #3a2e2a;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  color: #6f5e57;
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 35px;
+  background: #c96a1b;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #a85717;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 60px;
+  background-color: #fff8f2;
+}
+
+.light-bg {
+  background: #fff0e6;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  color: #c96a1b;
+  font-size: 36px;
+}
+
+.section-title p {
+  color: #6f5e57;
+}
+
+.about-content {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(201, 106, 27, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  color: #c96a1b;
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+  background: #fde2cf;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #c96a1b;
+  margin-bottom: 10px;
+}
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.feature-card h3 {
+  color: #b85c00;
+  margin-bottom: 10px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  color: #b85c00;
+}
+
+/* CONTACT ADVANCED */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.contact-info {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.contact-info h3 {
+  color: #b85c00;
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form h3 {
+  color: #b85c00;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.whatsapp {
+  background: #25D366;
+  margin-left: 10px;
+}
+
+.whatsapp:hover {
+  background: #1ebe5d;
+}
+
+
+/* FOOTER */
+footer {
+  background: #c96a1b;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
